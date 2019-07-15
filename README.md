@@ -9,7 +9,7 @@ using command
 ```
 
 Click either button and it is logged to realtime analytics db like this:
-!()[https://i.imgur.com/aBbZePy.png]
+![](https://i.imgur.com/aBbZePy.png)
 
 Review data at 
 ```
