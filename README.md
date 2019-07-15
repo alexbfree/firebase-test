@@ -9,4 +9,4 @@ using command `firebase deploy --only hosting:test-firebase-db-ajbb`
 Click either button and it is logged to realtime analytics db like this:
 ![](https://i.imgur.com/aBbZePy.png)
 
-Review data at `https://console.firebase.google.com/project/test-analytics-server/database/test-analytics-server/data`
+Review data at https://console.firebase.google.com/project/test-analytics-server/database/test-analytics-server/data
