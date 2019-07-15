@@ -1,0 +1,12 @@
+{
+  "hosting": {
+    "public": "public",
+    "site": "test-firebase-db-ajbb",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      "functions"
+    ]
+  }
+}

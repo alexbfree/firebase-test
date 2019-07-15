@@ -1,0 +1,45 @@
+<h1>hello world</h1>
+
+
+
+<button id="clickerA">Button A</button>
+<button id="clickerB">Button B</button>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+
+<script src="/__/firebase/6.3.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#reserved-urls -->
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+<script type="text/javascript">
+	const firebaseConfig = {
+	  apiKey: "AIzaSyAYss5VQiEKrFST1pttrv6uV01jdfwNcko",
+	  authDomain: "test-analytics-server.firebaseapp.com",
+	  databaseURL: "https://test-analytics-server.firebaseio.com",
+	  projectId: "test-analytics-server",
+	  storageBucket: "",
+	  messagingSenderId: "674854343791",
+	  appId: "1:674854343791:web:5f419c629b3a94be"
+	};
+	if (!firebase.apps.length) {
+		firebase.initializeApp(firebaseConfig);
+	}
+   var database = firebase.database();
+   database.ref('clicks').set([]);
+   function logThisClickA() {
+		let id = Math.floor(Math.random()*100);
+		database.ref('clicks').push({id:id,timeOfEvent:Date.now(),text:"user pressed button A"});
+   }
+   function logThisClickB() {
+		let id = Math.floor(Math.random()*100);
+		database.ref('clicks').push({id:id,timeOfEvent:Date.now(),text:"user pressed button B"});
+   }
+   document.querySelector("#clickerA").addEventListener("click",logThisClickA);
+   document.querySelector("#clickerB").addEventListener("click",logThisClickB);
+</script>
