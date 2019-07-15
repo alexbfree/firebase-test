@@ -1,5 +1,6 @@
 # firebase-test
 Just Testing Firebase Realtime Database
+(read more [here](https://github.com/firebase/quickstart-js/tree/master/database))
 
 Deployed at [https://test-firebase-db-ajbb.web.app/]
 
