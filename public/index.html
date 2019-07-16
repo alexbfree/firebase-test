@@ -34,6 +34,8 @@
    //database.ref('clicks').set([]);
    function logThisClickA() {
 		let id = Math.floor(Math.random()*100);
+		console.dir(document.referrer);
+		console.dir(navigator.userAgent);
 		database.ref('clicks').push({id:id,timeOfEvent:Date.now(),text:"user pressed button A"});
    }
    function logThisClickB() {
